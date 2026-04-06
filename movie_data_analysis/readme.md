@@ -19,8 +19,8 @@ Please see Assignment.pdf file - https://github.com/shailuk/spark/blob/792943e00
 
 
 #### 🛠️ Technical Stack<br/>
-Language: Python (PySpark)
-Processing Engine: Apache Spark 3.x
-Resource Manager: Hadoop YARN
-Storage: HDFS 
+Language: Python (PySpark) <br>
+Processing Engine: Apache Spark 3.x <br>
+Resource Manager: Hadoop YARN <br>
+Storage: HDFS <br>
 Cloud: GCP Data Proc
