@@ -1,13 +1,10 @@
 # Movies Data Analysis with PySpark
-
 ### This project demonstrates an end-to-end data engineering pipeline using Apache Spark to process and analyze movie metadata and user interactions. The analysis focuses on calculating rating distributions, user behavior, and identifying discrepancies between movie tags and ratings.
 
 ### 🏗️ Architecture & Setup
 The project is designed to run on a distributed environment (Hadoop/YARN) to simulate real-world big data workloads.
-
 #### 1. Environment Options
 Cloud: GCP (Dataproc)
-
 #### 2. Data Ingestion
 The raw data consists of three CSV files:
   a) movies.csv: Movie ID, Title, and Genres.
