@@ -1,0 +1,15 @@
+1) Move files from Local PC to GCP DataProc - 
+gcloud compute scp *.csv skm_hkm1992@cluster-4480-m:~/home/skm_hkm1992/spark_assgn/assgn_2
+
+
+2) Load files into HDFS location 
+2 a) List folders - 
+hdfs dfs -ls /
+
+2 b) Create a folder within HDFS
+hdfs dfs -mkdir -p /user/skm_hkm1992/spark_assgn2/
+
+2 c) Move files from GCP local to HDFS location
+hdfs dfs -put movies.csv ratings.csv tags.csv /bootcamp/spark_assgn2/
+
+3) Data Analytics with Apache Spark - Refer to the py file for requirements and code. 
