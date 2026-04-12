@@ -1,0 +1,55 @@
+
+------ DDL - 1 --------
+CREATE EXTERNAL TABLE IF NOT EXISTS q1_output (
+    campaign_id STRING,
+    campaign_date STRING,
+    campaign_hour INT,
+    os_type STRING,
+    impression INT,
+    click INT,
+    video_ad INT
+)
+ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+WITH SERDEPROPERTIES (
+    'serialization.format' = '1'
+)
+LOCATION '/bootcamp/spark_assgn1/output/result1';
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS q1_output (
+    campaign_id STRING,
+    campaign_date DATE,
+    campaign_hour STRING,
+    os_type STRING,
+    event STRUCT<impression:INT, click:INT, video_ad:INT> -- Matches your Spark Struct!
+)
+ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+LOCATION '/bootcamp/spark_assgn1/output/result1';
+
+CREATE EXTERNAL TABLE IF NOT EXISTS q2_output (
+    campaign_id STRING,
+    date STRING,
+    hour INT,
+    store_name STRING,
+    event STRUCT<impression: INT, click: INT, video_ad: INT>
+)
+ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+WITH SERDEPROPERTIES (
+  'ignore.malformed.json' = 'true'
+)
+STORED AS TEXTFILE
+LOCATION '/tmp/marketing_data/output2/q2_output';
+
+CREATE EXTERNAL TABLE IF NOT EXISTS q3_output (
+    campaign_id STRING,
+    date STRING,
+    hour INT,
+    gender STRING,
+    event STRUCT<impression: INT, click: INT, video_ad: INT>
+)
+ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+WITH SERDEPROPERTIES (
+  'ignore.malformed.json' = 'true'
+)
+STORED AS TEXTFILE
+LOCATION '/tmp/marketing_data/output3/q3_output';

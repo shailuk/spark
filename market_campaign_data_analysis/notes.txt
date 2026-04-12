@@ -1,0 +1,12 @@
+Step 1: Move the datasets from Local machine to GCP Cluster. 
+gcloud compute scp *.json skm_hkm1992@cluster-4480-m:/home/skm_hkm1992/spark_assgn/assgn_1
+
+Step 2: Move the file from GCP local  to HDFS
+hadoop fs -put *.json /bootcamp/spark_assgn1/datasets
+Overwrite: hadoop fs -put -f *.json /bootcamp/spark_assgn1/datasets
+Delete an old file : hadoop fs -rm -r /bootcamp/spark_assgn1/datasets/ad_campaigns_data.json
+
+Step 3: Run Jupyter notebook
+
+Step 4: Move output file from HDFS to destination 
+hadoop fs -get /bootcamp/spark_assgn1/output/result1/q1_output.json .
