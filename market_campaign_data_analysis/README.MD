@@ -1,4 +1,4 @@
-# Market Campaign Data Pipeline: Analytical Processing with PySpark and Hive <br>
+# Market Campaign Data Analysis <br>
 
 ## Project Overview
 This project demonstrates an end-to-end data engineering workflow. It involves ingesting raw JSON datasets into HDFS, performing complex analytical transformations using PySpark, and exposing the processed results through Apache Hive external tables for downstream querying.
