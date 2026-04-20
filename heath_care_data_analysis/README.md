@@ -20,4 +20,8 @@
 **Storage**: Google Cloud Storage (GCS) <br/>
 **Warehouse**: Google BigQuery <br/>
 **IDE**: VS Code
-**Programming Language** : Python
+**Programming Language** : Python <br/>
+
+
+**Dataset** - You can use mock data__generator.py script to generate multiple csv files for each day, dates you can decide. <br/>
+Each file will have these fields: patient_id, age, gender,diagnosis_code, diagnosis_description, diagnosis_date
