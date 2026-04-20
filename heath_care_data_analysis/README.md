@@ -1,6 +1,8 @@
 # Health Care Data Analysis
 
-### **Problem Statement** : Build a Spark application that will process a CSV file(s) from a GCS bucket, perform certain transformations and validations on it, and then store the transformed data in a Bigquery table table.
+### **🚀 Overview**  <br/>
+
+#### Build a Spark application that will process a CSV file(s) from a GCS bucket, perform certain transformations and validations on it, and then store the transformed data in a Bigquery table table.
 
 ### Architecture <br/>
 **Ingestion**: Raw healthcare CSV data is uploaded to GCS. <br/>
@@ -13,5 +15,5 @@
 **Orchestration**: Apache Airflow (Cloud Composer) <br/>
 **Storage**: Google Cloud Storage (GCS) <br/>
 **Warehouse**: Google BigQuery <br/>
-**IDE**: Mac / VS Code
+**IDE**: VS Code
 **Programming Language** : Python
