@@ -1,0 +1,8 @@
+1) Run a managed airflow cluster in GCP Composer. 
+2) Run the data_generator script to generate sample dataset with 100 rows. 
+3) The file date is part of file name. 
+4) Place the source dataset(health_data_20230801.csv) and the diagnosis code lookup table (lk_diagnosis.csv) files in the GCP bucket.
+5) Save the healthcare_data_analysis.py, upsert_health_data.sql and healthcare_airflow.py in GCP bucket. 
+6) Run the airflow job manually.
+7) The datapiple line picks the files from the GCP bucket, runs transformation and data validations and saves the transformed data into 
+    a bigquery table.  
